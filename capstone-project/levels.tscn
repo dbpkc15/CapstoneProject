@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://c07wormnimagi"]
+
+[ext_resource type="Script" uid="uid://cwb1uarn50aup" path="res://levels.gd" id="1_5k54k"]
+[ext_resource type="PackedScene" uid="uid://cejxcyyxeo73y" path="res://Fade_Transition.tscn" id="2_hbfth"]
+
+[node name="Levels" type="Node2D" unique_id=452577959]
+script = ExtResource("1_5k54k")
+
+[node name="Control" type="Control" parent="." unique_id=1337974525]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -2.0
+offset_top = -3.0
+offset_right = 38.0
+offset_bottom = 37.0
+
+[node name="Level_1" type="Button" parent="Control" unique_id=589438674]
+layout_mode = 0
+offset_left = 603.0
+offset_top = 234.0
+offset_right = 985.0
+offset_bottom = 448.0
+text = "Level 1"
+
+[node name="Level_2" type="Button" parent="Control" unique_id=1759262212]
+layout_mode = 0
+offset_left = 210.0
+offset_top = 350.0
+offset_right = 552.0
+offset_bottom = 525.0
+text = "Level 2"
+
+[node name="Level_3" type="Button" parent="Control" unique_id=2089882609]
+layout_mode = 0
+offset_left = 329.0
+offset_top = 63.0
+offset_right = 610.0
+offset_bottom = 200.0
+text = "Level 3"
+
+[node name="Fade_Transition" parent="." unique_id=1402769930 instance=ExtResource("2_hbfth")]
+visible = false
+
+[connection signal="pressed" from="Control/Level_1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="Control/Level_2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="Control/Level_3" to="." method="_on_level_3_pressed"]

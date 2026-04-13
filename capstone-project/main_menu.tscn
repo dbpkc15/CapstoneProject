@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://dc8ubef81hohp"]
+
+[ext_resource type="Script" uid="uid://3yptbu8dl6d6" path="res://main_menu.gd" id="1_06t4h"]
+[ext_resource type="PackedScene" uid="uid://cejxcyyxeo73y" path="res://Fade_Transition.tscn" id="2_7vrkn"]
+
+[node name="MainMenu" type="Node2D" unique_id=1620482163]
+script = ExtResource("1_06t4h")
+
+[node name="Button_Manager" type="Control" parent="." unique_id=60747939]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 36.0
+
+[node name="Start" type="Button" parent="Button_Manager" unique_id=640385594]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 472.0
+offset_top = 171.0
+offset_right = 692.0
+offset_bottom = 246.0
+text = "Start Game"
+
+[node name="Options" type="Button" parent="Button_Manager" unique_id=754660856]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 474.0
+offset_top = 261.0
+offset_right = 691.0
+offset_bottom = 352.2
+text = "Options"
+
+[node name="Quit" type="Button" parent="Button_Manager" unique_id=267851388]
+layout_mode = 0
+offset_left = 477.0
+offset_top = 365.0
+offset_right = 693.0
+offset_bottom = 454.0
+text = "Quit"
+
+[node name="Fade_Transition" parent="." unique_id=1402769930 instance=ExtResource("2_7vrkn")]
+visible = false
+
+[node name="Fade_timer" type="Timer" parent="Fade_Transition" unique_id=802505947]
+
+[connection signal="pressed" from="Button_Manager/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Button_Manager/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Button_Manager/Quit" to="." method="_on_quit_pressed"]
