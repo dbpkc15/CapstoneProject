@@ -15,162 +15,162 @@ sky = SubResource("Sky_h2yge")
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_7mycd"]
 
-[node name="Node3D" type="Node3D"]
+[node name="Node3D" type="Node3D" unique_id=1232121490]
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1479089235]
 environment = SubResource("Environment_1bvp3")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1656322562]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.4823208, 0)
 
-[node name="CSGBox3D" type="CSGBox3D" parent="DirectionalLight3D"]
+[node name="CSGBox3D" type="CSGBox3D" parent="DirectionalLight3D" unique_id=1892450927]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0050342083, 0, 0.0015215874)
 use_collision = true
 size = Vector3(20, 1, 20)
 
-[node name="CSGCylinder3D" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D"]
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D" unique_id=1444070462]
 transform = Transform3D(0.88751805, 0, -0.46077302, 0, 1, 0, 0.46077302, 0, 0.88751805, 6.0562506, 1.7647579, -3.8317099)
 radius = 1.912
 height = 0.357
 
-[node name="CSGCylinder3D" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D/CSGCylinder3D"]
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D/CSGCylinder3D" unique_id=1931399099]
 transform = Transform3D(0.9999991, 0, -2.9802322e-08, 0, 1, 0, 2.9802322e-08, 0, 0.9999991, 11.364628, -1.9214218, 6.980802)
 radius = 1.788
 height = 1.17
 
-[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D/CSGCylinder3D"]
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D/CSGCylinder3D" unique_id=205732216]
 transform = Transform3D(0.99999917, 0, -2.9802322e-08, 0, 1, 0, 2.9802322e-08, 0, 0.99999917, 13.67786, -0.16039753, 4.2594047)
 radius = 1.788
 height = 1.25
 
-[node name="CSGBox3D" type="CSGBox3D" parent="DirectionalLight3D/CSGBox3D"]
+[node name="CSGBox3D" type="CSGBox3D" parent="DirectionalLight3D/CSGBox3D" unique_id=375386484]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.090302, -0.059558153, -14.100671)
 size = Vector3(1.8925781, 1, 8.720764)
 
-[node name="CSGBox3D2" type="CSGBox3D" parent="DirectionalLight3D/CSGBox3D"]
+[node name="CSGBox3D2" type="CSGBox3D" parent="DirectionalLight3D/CSGBox3D" unique_id=990138896]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.4997854, -0.249825, -17.606104)
 size = Vector3(5.6916504, 1.0899658, 1.9790039)
 
-[node name="CSGCylinder3D" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D/CSGBox3D2"]
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D/CSGBox3D2" unique_id=622446197]
 transform = Transform3D(0.9999991, 0, -2.9802322e-08, 0, 1, 0, 2.9802322e-08, 0, 0.9999991, 9.0737705, 3.785339, -0.29422188)
 radius = 1.788
 height = 1.17
 
-[node name="CSGBox3D2" type="CSGBox3D" parent="DirectionalLight3D/CSGBox3D/CSGBox3D2"]
+[node name="CSGBox3D2" type="CSGBox3D" parent="DirectionalLight3D/CSGBox3D/CSGBox3D2" unique_id=1225678744]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.611038, 6.322296, -0.4371872)
 size = Vector3(5.6916504, 1.0899658, 1.9790039)
 
-[node name="CSGCylinder3D" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D/CSGBox3D2/CSGBox3D2"]
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D/CSGBox3D2/CSGBox3D2" unique_id=273578163]
 transform = Transform3D(0.9999991, 0, -2.9802322e-08, 0, 1, 0, 2.9802322e-08, 0, 0.9999991, -0.5303993, 0.54813004, 6.5235796)
 radius = 1.788
 height = 1.17
 
-[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D"]
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D" unique_id=1776156111]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.27439332, 1.4905133, -17.524986)
 radius = 1.196
 height = 0.956
 
-[node name="CSGBox3D3" type="CSGBox3D" parent="DirectionalLight3D/CSGBox3D"]
+[node name="CSGBox3D3" type="CSGBox3D" parent="DirectionalLight3D/CSGBox3D" unique_id=1457070903]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.3654194, 9.044513, -5.087269)
 size = Vector3(8, 1, 8)
 
-[node name="CSGBox3D3" type="CSGBox3D" parent="DirectionalLight3D/CSGBox3D/CSGBox3D3"]
+[node name="CSGBox3D3" type="CSGBox3D" parent="DirectionalLight3D/CSGBox3D/CSGBox3D3" unique_id=1068079678]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.271595, 0.0069208145, -2.5375705)
 size = Vector3(2.8842773, 1, 2.9006042)
 
-[node name="CSGBox3D3" type="CSGBox3D" parent="DirectionalLight3D/CSGBox3D/CSGBox3D3/CSGBox3D3"]
+[node name="CSGBox3D3" type="CSGBox3D" parent="DirectionalLight3D/CSGBox3D/CSGBox3D3/CSGBox3D3" unique_id=1112529385]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1393397, 0.027763367, 2.0107293)
 size = Vector3(1.6154785, 1, 6.9356537)
 
-[node name="CSGBox3D3" type="CSGBox3D" parent="DirectionalLight3D/CSGBox3D/CSGBox3D3/CSGBox3D3/CSGBox3D3"]
+[node name="CSGBox3D3" type="CSGBox3D" parent="DirectionalLight3D/CSGBox3D/CSGBox3D3/CSGBox3D3/CSGBox3D3" unique_id=1547994676]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8374498, 0.0027713776, 2.599182)
 size = Vector3(2.1168213, 1, 1.7113914)
 
-[node name="CSGBox3D3" type="CSGBox3D" parent="DirectionalLight3D/CSGBox3D/CSGBox3D3/CSGBox3D3/CSGBox3D3/CSGBox3D3"]
+[node name="CSGBox3D3" type="CSGBox3D" parent="DirectionalLight3D/CSGBox3D/CSGBox3D3/CSGBox3D3/CSGBox3D3/CSGBox3D3" unique_id=336021997]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5530071, 0.0027713776, 1.6709315)
 size = Vector3(0.99346924, 1, 1.7113914)
 
-[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D"]
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D" unique_id=80178594]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.284359, 10.239491, -0.8492868)
 radius = 0.855
 height = 0.4317627
 
-[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D/CSGCylinder3D3"]
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D/CSGCylinder3D3" unique_id=2003468534]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09799576, -0.53064156, 2.4244816)
 radius = 0.855
 height = 0.4317627
 
-[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D/CSGCylinder3D3/CSGCylinder3D3"]
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D/CSGCylinder3D3/CSGCylinder3D3" unique_id=1443669293]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2455664, 0.8258896, 0.124941826)
 radius = 0.855
 height = 0.4317627
 
-[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D/CSGCylinder3D3/CSGCylinder3D3/CSGCylinder3D3"]
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D/CSGCylinder3D3/CSGCylinder3D3/CSGCylinder3D3" unique_id=1226319211]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9660845, 0.862401, -0.6764852)
 radius = 0.855
 height = 0.4317627
 
-[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D/CSGCylinder3D3/CSGCylinder3D3/CSGCylinder3D3/CSGCylinder3D3"]
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D/CSGCylinder3D3/CSGCylinder3D3/CSGCylinder3D3/CSGCylinder3D3" unique_id=189847392]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9503126, 0.5978174, -2.0423179)
 radius = 0.855
 height = 0.4317627
 
-[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D/CSGCylinder3D3/CSGCylinder3D3/CSGCylinder3D3"]
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D/CSGCylinder3D3/CSGCylinder3D3/CSGCylinder3D3" unique_id=1974583475]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0792418, 1.6847839, 7.043832)
 radius = 0.855
 height = 0.4317627
 
-[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D/CSGCylinder3D3/CSGCylinder3D3/CSGCylinder3D3/CSGCylinder3D4"]
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D/CSGCylinder3D3/CSGCylinder3D3/CSGCylinder3D3/CSGCylinder3D4" unique_id=384238415]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9660845, 0.862401, -0.6764852)
 radius = 0.855
 height = 0.4317627
 
-[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D/CSGCylinder3D3/CSGCylinder3D3/CSGCylinder3D3/CSGCylinder3D4/CSGCylinder3D3"]
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D/CSGCylinder3D3/CSGCylinder3D3/CSGCylinder3D3/CSGCylinder3D4/CSGCylinder3D3" unique_id=2062025039]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9503126, 0.5978174, -2.0423179)
 radius = 0.855
 height = 0.4317627
 
-[node name="CSGBox3D4" type="CSGBox3D" parent="DirectionalLight3D/CSGBox3D"]
+[node name="CSGBox3D4" type="CSGBox3D" parent="DirectionalLight3D/CSGBox3D" unique_id=1537096470]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.840811, 11.315456, 4.7120113)
 size = Vector3(1, 1, 3)
 
-[node name="CSGBox3D5" type="CSGBox3D" parent="DirectionalLight3D/CSGBox3D"]
+[node name="CSGBox3D5" type="CSGBox3D" parent="DirectionalLight3D/CSGBox3D" unique_id=1584601462]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.265162, 12.10529, 8.648546)
 size = Vector3(3.619, 0.867, 3.790039)
 
-[node name="CSGBox3D5" type="CSGBox3D" parent="DirectionalLight3D/CSGBox3D/CSGBox3D5"]
+[node name="CSGBox3D5" type="CSGBox3D" parent="DirectionalLight3D/CSGBox3D/CSGBox3D5" unique_id=2129392756]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8387871, -1.3011589, 2.6934776)
 size = Vector3(3.619, 0.867, 1.3388672)
 
-[node name="CSGBox3D5" type="CSGBox3D" parent="DirectionalLight3D/CSGBox3D/CSGBox3D5/CSGBox3D5"]
+[node name="CSGBox3D5" type="CSGBox3D" parent="DirectionalLight3D/CSGBox3D/CSGBox3D5/CSGBox3D5" unique_id=1114184046]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.853363, 0.34120655, 2.163763)
 size = Vector3(1.5536406, 0.867, 1.3388672)
 
-[node name="CSGBox3D5" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D/CSGBox3D5/CSGBox3D5/CSGBox3D5"]
+[node name="CSGBox3D5" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D/CSGBox3D5/CSGBox3D5/CSGBox3D5" unique_id=587334288]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22295713, -0.81679916, 2.7935734)
 radius = 1.279
 height = 1.529
 
-[node name="CSGBox3D5" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D/CSGBox3D5/CSGBox3D5/CSGBox3D5/CSGBox3D5"]
+[node name="CSGBox3D5" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D/CSGBox3D5/CSGBox3D5/CSGBox3D5/CSGBox3D5" unique_id=890318971]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.697325, 0.9768591, -19.36854)
 radius = 1.279
 height = 1.529
 
-[node name="CSGBox3D5" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D/CSGBox3D5/CSGBox3D5/CSGBox3D5/CSGBox3D5/CSGBox3D5"]
+[node name="CSGBox3D5" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D/CSGBox3D5/CSGBox3D5/CSGBox3D5/CSGBox3D5/CSGBox3D5" unique_id=293839627]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.9296675, -0.1699543, 0.74295044)
 radius = 1.279
 height = 1.529
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1109487135]
 script = ExtResource("1_ig7tw")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D" unique_id=1038188695]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2666252, 8.290501)
 mesh = SubResource("CapsuleMesh_lquwl")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=675840054]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3498445, 8.503316)
 shape = SubResource("CapsuleShape3D_7mycd")
 
-[node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D" unique_id=955907653]
 transform = Transform3D(1, 0, 0, 0, 0.99405444, 0.10888422, 0, -0.10888422, 0.99405444, 1.233777, 2.7110486, 11.079375)

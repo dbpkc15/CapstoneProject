@@ -3,8 +3,28 @@ extends CharacterBody3D
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 const MAX_JUMPS = 3 
+const MOUSE_SENSITIVITY = 0.003
 
 var jump_count = 0
+
+@onready var camera = $Camera3D
+
+var camera_x_rotation = 0.0
+
+func _ready():
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+
+func _input(event):
+	# Mouse look
+	if event is InputEventMouseMotion:
+		rotate_y(-event.relative.x * MOUSE_SENSITIVITY)
+		camera_x_rotation += (-event.relative.y * MOUSE_SENSITIVITY)
+		camera_x_rotation = clamp(camera_x_rotation, -0.5, 0.5)
+		camera.rotation.x = camera_x_rotation
+	
+	# Release mouse with Escape
+	if event.is_action_pressed("ui_cancel"):
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
 func _physics_process(delta: float) -> void:
 	
