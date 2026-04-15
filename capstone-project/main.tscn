@@ -15,6 +15,22 @@ sky = SubResource("Sky_h2yge")
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_7mycd"]
 
+[sub_resource type="GDScript" id="GDScript_ig7tw"]
+script/source = "extends Area3D
+
+func _ready() -> void:
+	body_entered.connect(_on_body_entered)
+
+func _on_body_entered(body):
+	if body.name == \"Player\":
+		body.respawn()
+
+func _process(delta: float) -> void:
+	pass
+"
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_0xm2m"]
+
 [node name="Node3D" type="Node3D" unique_id=1232121490]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1479089235]
@@ -161,16 +177,26 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.9296675, -0.1699543, 0.742
 radius = 1.279
 height = 1.529
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1109487135]
+[node name="Player" type="CharacterBody3D" parent="." unique_id=1109487135]
 script = ExtResource("1_ig7tw")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D" unique_id=1038188695]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Player" unique_id=1038188695]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2666252, 8.290501)
 mesh = SubResource("CapsuleMesh_lquwl")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=675840054]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=675840054]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3498445, 8.503316)
 shape = SubResource("CapsuleShape3D_7mycd")
 
-[node name="Camera3D" type="Camera3D" parent="CharacterBody3D" unique_id=955907653]
+[node name="CameraPivot" type="Node3D" parent="Player" unique_id=1867486244]
+
+[node name="Camera3D" type="Camera3D" parent="Player/CameraPivot" unique_id=955907653]
 transform = Transform3D(1, 0, 0, 0, 0.99405444, 0.10888422, 0, -0.10888422, 0.99405444, 1.233777, 2.7110486, 11.079375)
+
+[node name="Area3D" type="Area3D" parent="." unique_id=605828781]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 2.4972286, -44.160027, -15.297745)
+script = SubResource("GDScript_ig7tw")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=443750199]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 0, 0.018976688, 0)
+shape = SubResource("SphereShape3D_0xm2m")
