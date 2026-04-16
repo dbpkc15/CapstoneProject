@@ -20,10 +20,10 @@ func _ready() -> void:
 
 func _input(event):
 	if event is InputEventMouseMotion:
-		# Rotate around player (360°)
+	
 		pivot.rotate_y(-event.relative.x * MOUSE_SENSITIVITY)
 		
-		# Look up/down
+
 		camera_x_rotation += -event.relative.y * MOUSE_SENSITIVITY
 		camera_x_rotation = clamp(camera_x_rotation, -1.0, 0.5)
 		camera.rotation.x = camera_x_rotation
@@ -45,7 +45,6 @@ func _physics_process(delta: float) -> void:
 
 	var input_dir := Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 
-	# ✅ CAMERA-RELATIVE MOVEMENT (fixed type issue)
 	var direction: Vector3 = (pivot.global_transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	direction.y = 0
 
