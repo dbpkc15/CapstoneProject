@@ -15,10 +15,12 @@ var camera_x_rotation = 0.0
 
 
 func _ready() -> void:
+	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	spawn_position = global_position
 
 
 func _input(event):
+	
 	if event is InputEventMouseMotion:
 	
 		pivot.rotate_y(-event.relative.x * MOUSE_SENSITIVITY)
@@ -28,8 +30,8 @@ func _input(event):
 		camera_x_rotation = clamp(camera_x_rotation, -1.0, 0.5)
 		camera.rotation.x = camera_x_rotation
 	
-	if event.is_action_pressed("ui_cancel"):
-		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	if Input.is_action_just_pressed("ui_cancel"):
+		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 
 
 func _physics_process(delta: float) -> void:

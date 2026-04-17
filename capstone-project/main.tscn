@@ -302,20 +302,19 @@ height = 1.529
 material = SubResource("StandardMaterial3D_kq58d")
 
 [node name="Player" type="CharacterBody3D" parent="." unique_id=1109487135]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.96426725, 0)
 script = ExtResource("1_ig7tw")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Player" unique_id=1038188695]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2666252, 8.290501)
 mesh = SubResource("CapsuleMesh_lquwl")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=675840054]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3498445, 8.503316)
 shape = SubResource("CapsuleShape3D_7mycd")
 
 [node name="CameraPivot" type="Node3D" parent="Player" unique_id=1867486244]
 
 [node name="Camera3D" type="Camera3D" parent="Player/CameraPivot" unique_id=955907653]
-transform = Transform3D(1, 0, 0, 0, 0.99405444, 0.10888422, 0, -0.10888422, 0.99405444, 1.233777, 2.7110486, 11.079375)
+transform = Transform3D(1, 0, 0, 0, 0.99405444, 0.10888422, 0, -0.10888422, 0.99405444, 0.34627628, 2.7110486, 4.0328846)
 
 [node name="Area3D" type="Area3D" parent="." unique_id=605828781]
 transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 2.4972286, -44.160027, -15.297745)
