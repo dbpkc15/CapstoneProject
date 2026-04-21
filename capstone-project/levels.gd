@@ -7,12 +7,12 @@ func _ready() -> void:
 
 
 func _on_level_1_pressed() -> void:
-	get_tree().change_scene_to_file("res://main.tscn")
+	get_tree().change_scene_to_file("res://Level_1.tscn")
 
 
 func _on_level_2_pressed() -> void:
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://Level_2.tscn")
 
 
 func _on_level_3_pressed() -> void:
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://Level_3.tscn")
