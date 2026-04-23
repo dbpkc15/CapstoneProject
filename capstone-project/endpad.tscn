@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cflplv6pviyuw"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_nkjuh"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_2hfql"]
+height = 1.0205078
+
+[node name="Node3D" type="Node3D" unique_id=396366810]
+
+[node name="EndPad" type="StaticBody3D" parent="." unique_id=1719069600]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="EndPad" unique_id=1203987183]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0.577466, 0)
+mesh = SubResource("CylinderMesh_nkjuh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EndPad" unique_id=91104962]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.5723586, 0)
+shape = SubResource("CylinderShape3D_2hfql")

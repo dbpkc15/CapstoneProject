@@ -24,11 +24,3 @@ offset_right = 691.0
 offset_bottom = 465.0
 text = "Next Level
 "
-
-[node name="TextEdit" type="TextEdit" parent="." unique_id=317615153]
-offset_left = 472.0
-offset_top = 94.0
-offset_right = 688.0
-offset_bottom = 182.0
-text = "Level Completed!
-"
