@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://tu423d8dg54j" path="res://character_body_3d.gd" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://cflplv6pviyuw" path="res://endpad.tscn" id="2_kidjj"]
+[ext_resource type="PackedScene" uid="uid://b8bgaamg66tbb" path="res://coin.tscn" id="3_65pcf"]
+[ext_resource type="PackedScene" uid="uid://cn04dxxyb0mnj" path="res://optionalcoin.tscn" id="4_a0j4s"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_0xm2m"]
 sky_top_color = Color(0.5254762, 0.78750205, 0.9281895, 1)
@@ -103,7 +105,11 @@ albedo_color = Color(0.95686275, 0.73333335, 0.83137256, 1)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qsp4k"]
 albedo_color = Color(0.95686275, 0.73333335, 0.83137256, 1)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_65pcf"]
+albedo_color = Color(1, 0.3372549, 0.9647059, 1)
+
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_lquwl"]
+material = SubResource("StandardMaterial3D_65pcf")
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_7mycd"]
 
@@ -238,7 +244,7 @@ height = 0.4317627
 material = SubResource("StandardMaterial3D_yaehf")
 
 [node name="CSGCylinder3D3" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D/CSGCylinder3D3/CSGCylinder3D3" unique_id=1443669293]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2455664, 0.8258896, 0.124941826)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.2360659, 0.8258896, 0.124941826)
 radius = 0.855
 height = 0.4317627
 material = SubResource("StandardMaterial3D_074og")
@@ -325,7 +331,7 @@ transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 2.4972286, -44.160027, -15.29
 script = SubResource("GDScript_ig7tw")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=443750199]
-transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 0, 0.018976688, 0)
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0.018976688, 1.2869792)
 shape = SubResource("SphereShape3D_0xm2m")
 
 [node name="endpad" parent="." unique_id=396366810 instance=ExtResource("2_kidjj")]
@@ -337,5 +343,86 @@ script = SubResource("GDScript_kidjj")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WinArea" unique_id=364922081]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -3.7504368, 12.648275, 16.51152)
 shape = SubResource("CylinderShape3D_65pcf")
+
+[node name="coin" parent="." unique_id=2097315517 instance=ExtResource("3_65pcf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.971719, 2.4732702, -3.4208672)
+
+[node name="optionalcoin" parent="." unique_id=1397667212 instance=ExtResource("4_a0j4s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.142342, 3.0142794, 6.2622585)
+
+[node name="optionalcoin2" parent="." unique_id=1034619697 instance=ExtResource("4_a0j4s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.078948, 0.9879017, 7.7090197)
+
+[node name="optionalcoin3" parent="." unique_id=468084616 instance=ExtResource("4_a0j4s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.119772, 6.9877424, -17.703278)
+
+[node name="optionalcoin4" parent="." unique_id=1269598742 instance=ExtResource("4_a0j4s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.172765, 12.656003, -3.1836214)
+
+[node name="optionalcoin5" parent="." unique_id=1328409137 instance=ExtResource("4_a0j4s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.563075, 12.67312, -1.0080218)
+
+[node name="optionalcoin6" parent="." unique_id=176286054 instance=ExtResource("4_a0j4s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.648638, 14.306553, 5.9840326)
+
+[node name="optionalcoin7" parent="." unique_id=1053034312 instance=ExtResource("4_a0j4s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.66139, 12.845694, 8.752086)
+
+[node name="coin2" parent="." unique_id=980038844 instance=ExtResource("3_65pcf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.437681, 1.0540967, -12.939271)
+
+[node name="coin3" parent="." unique_id=127087480 instance=ExtResource("3_65pcf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2100599, -7.478277)
+
+[node name="coin4" parent="." unique_id=729451358 instance=ExtResource("3_65pcf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.356406, 0.895195, 0)
+
+[node name="coin5" parent="." unique_id=273913865 instance=ExtResource("3_65pcf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2774935, 0.986629, 4.7348166)
+
+[node name="coin6" parent="." unique_id=382425264 instance=ExtResource("3_65pcf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.38721848, 2.5541668, -17.623512)
+
+[node name="coin7" parent="." unique_id=835302116 instance=ExtResource("3_65pcf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.146149, 4.719337, -16.598896)
+
+[node name="coin8" parent="." unique_id=1864530996 instance=ExtResource("3_65pcf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.218556, 7.38853, -15.954308)
+
+[node name="coin9" parent="." unique_id=444677723 instance=ExtResource("3_65pcf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.383488, 8.283898, -10.319784)
+
+[node name="coin10" parent="." unique_id=1418581831 instance=ExtResource("3_65pcf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.3540306, 12.501309, -2.3747873)
+
+[node name="coin11" parent="." unique_id=74880491 instance=ExtResource("3_65pcf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.7857065, 10.00985, -3.9691)
+
+[node name="coin12" parent="." unique_id=1691112771 instance=ExtResource("3_65pcf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7832391, 9.948698, -3.6066332)
+
+[node name="coin13" parent="." unique_id=1771312563 instance=ExtResource("3_65pcf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.217922, 10.844849, -0.9907918)
+
+[node name="coin14" parent="." unique_id=1368748736 instance=ExtResource("3_65pcf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.3653107, 10.327627, 1.6149206)
+
+[node name="coin15" parent="." unique_id=496132812 instance=ExtResource("3_65pcf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.577, 11.14683, 1.5574145)
+
+[node name="coin16" parent="." unique_id=1201079329 instance=ExtResource("3_65pcf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.8309455, 12.414965, 6.3311014)
+
+[node name="coin17" parent="." unique_id=1728346226 instance=ExtResource("3_65pcf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.646917, 12.993254, 9.767499)
+
+[node name="coin18" parent="." unique_id=698566334 instance=ExtResource("3_65pcf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.150461, 11.676175, 11.3133955)
+
+[node name="coin19" parent="." unique_id=1690472711 instance=ExtResource("3_65pcf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.557264, 11.962854, 13.420389)
+
+[node name="coin20" parent="." unique_id=499808608 instance=ExtResource("3_65pcf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.732516, 10.0262165, -6.170899)
 
 [connection signal="body_entered" from="WinArea" to="WinArea" method="_on_body_entered"]
