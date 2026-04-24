@@ -9,6 +9,7 @@ func _on_start_pressed() -> void:
 	$Fade_Transition/Fade_timer.timeout.connect(_on_fade_timer_timeout)
 	$Fade_Transition/AnimationPlayer.play("Fade_In")
 
+
 func _on_options_pressed() -> void:
 	button_type = "options"
 	$Fade_Transition.show()

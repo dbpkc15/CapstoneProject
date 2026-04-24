@@ -46,6 +46,7 @@ func _physics_process(delta: float) -> void:
 		jump_count += 1
 
 	var input_dir := Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+	input_dir = Input.get_vector("LeftMovement", "RightMovement", "UpMovement", "DownMovement")
 
 	var direction: Vector3 = (pivot.global_transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	direction.y = 0
