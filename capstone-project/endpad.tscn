@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cflplv6pviyuw"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nkjuh"]
-albedo_color = Color(1, 0.3372549, 0.9647059, 1)
+albedo_color = Color(0.46808505, 0.28940514, 0.17510366, 1)
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_nkjuh"]
 material = SubResource("StandardMaterial3D_nkjuh")
