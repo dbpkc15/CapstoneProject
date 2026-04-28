@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://buwngku2pi71w"]
 
+[ext_resource type="Script" uid="uid://td15xchhbkol" path="res://level_3.gd" id="1_qulvd"]
 [ext_resource type="Script" uid="uid://tu423d8dg54j" path="res://character_body_3d.gd" id="1_waryd"]
 [ext_resource type="PackedScene" uid="uid://cflplv6pviyuw" path="res://endpad.tscn" id="2_qulvd"]
 
@@ -136,6 +137,7 @@ func _on_body_entered(body):
 height = 0.3125
 
 [node name="Node3D" type="Node3D" unique_id=1232121490]
+script = ExtResource("1_qulvd")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1479089235]
 environment = SubResource("Environment_1bvp3")
@@ -338,4 +340,18 @@ script = SubResource("GDScript_kidjj")
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -3.7504368, 12.648275, 16.51152)
 shape = SubResource("CylinderShape3D_65pcf")
 
+[node name="Level3Timer" type="Timer" parent="." unique_id=1230353945]
+wait_time = 30.0
+one_shot = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=405265729]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1919573014]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 44
+
 [connection signal="body_entered" from="WinArea" to="WinArea" method="_on_body_entered"]
+[connection signal="timeout" from="Level3Timer" to="." method="_on_level_3_timer_timeout"]
