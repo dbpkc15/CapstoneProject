@@ -67,6 +67,7 @@ grow_vertical = 2
 mouse_filter = 2
 texture = ExtResource("3_fu7sn")
 stretch_mode = 6
+metadata/_edit_lock_ = true
 
 [connection signal="pressed" from="Button_Manager/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Button_Manager/Tutorial" to="." method="_on_options_pressed"]

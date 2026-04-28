@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://okf22vrhjt57" path="res://win_screen.gd" id="1_a03an"]
 [ext_resource type="PackedScene" uid="uid://cejxcyyxeo73y" path="res://Fade_Transition.tscn" id="2_0eiwq"]
+[ext_resource type="Texture2D" uid="uid://cc8cipykre8aa" path="res://background.jpeg" id="3_cx6km"]
 
 [node name="Node2D" type="Node2D" unique_id=1499263953]
 script = ExtResource("1_a03an")
@@ -37,6 +38,17 @@ offset_right = 1629.0
 offset_bottom = 1141.0
 
 [node name="Fade_timer" type="Timer" parent="Fade_Transition" unique_id=1168935443]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1365846939]
+z_index = -1
+offset_left = -42.0
+offset_top = -133.0
+offset_right = 1265.0
+offset_bottom = 847.0
+mouse_filter = 2
+texture = ExtResource("3_cx6km")
+stretch_mode = 6
+metadata/_edit_lock_ = true
 
 [connection signal="pressed" from="Button_Manager/MainMenu" to="." method="_on_main_menu_pressed"]
 [connection signal="pressed" from="Button_Manager/NextLevel" to="." method="_on_next_level_pressed"]

@@ -53,13 +53,14 @@ grow_vertical = 2
 [node name="TextureRect" type="TextureRect" parent="Control2" unique_id=1191416351]
 z_index = -1
 layout_mode = 1
-offset_left = 4.0
-offset_top = -12.0
-offset_right = 1180.0
-offset_bottom = 692.0
+offset_left = -85.0
+offset_top = -149.0
+offset_right = 1222.0
+offset_bottom = 831.0
 mouse_filter = 2
 texture = ExtResource("3_hbfth")
 stretch_mode = 6
+metadata/_edit_lock_ = true
 
 [connection signal="pressed" from="Control/Level_1" to="." method="_on_level_1_pressed"]
 [connection signal="pressed" from="Control/Level_2" to="." method="_on_level_2_pressed"]

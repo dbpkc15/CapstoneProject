@@ -25,7 +25,7 @@ func _on_fade_timer_timeout() -> void:
 	if button_type == "start" :
 		await $Fade_Transition/AnimationPlayer.animation_finished
 		get_tree().change_scene_to_file("res://levels.tscn")
-		
+
 	elif button_type == "options" :
 		await $Fade_Transition/AnimationPlayer.animation_finished
 		get_tree().change_scene_to_file("res://options.tscn")

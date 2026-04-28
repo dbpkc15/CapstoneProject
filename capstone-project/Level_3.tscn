@@ -4,9 +4,16 @@
 [ext_resource type="Script" uid="uid://tu423d8dg54j" path="res://character_body_3d.gd" id="1_waryd"]
 [ext_resource type="PackedScene" uid="uid://cflplv6pviyuw" path="res://endpad.tscn" id="2_qulvd"]
 
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_qulvd"]
+frequency = 0.1031
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_4qbfe"]
+noise = SubResource("FastNoiseLite_qulvd")
+
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_0xm2m"]
 sky_top_color = Color(0.5254762, 0.78750205, 0.9281895, 1)
 sky_horizon_color = Color(0.5254902, 0.7882353, 0.92941177, 1)
+sky_cover = SubResource("NoiseTexture2D_4qbfe")
 ground_bottom_color = Color(0.5254902, 0.7882353, 0.92941177, 1)
 ground_horizon_color = Color(0.5254902, 0.7882353, 0.92941177, 1)
 

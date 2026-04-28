@@ -1,6 +1,11 @@
 [gd_scene format=3 uid="uid://ba0u2kv5gwu3k"]
 
+[ext_resource type="Script" uid="uid://cd5xo5i7w3seq" path="res://game_complete.gd" id="1_u7fty"]
+[ext_resource type="Texture2D" uid="uid://cc8cipykre8aa" path="res://background.jpeg" id="2_dmo3b"]
+[ext_resource type="PackedScene" uid="uid://cejxcyyxeo73y" path="res://Fade_Transition.tscn" id="3_qnbyg"]
+
 [node name="Node2D" type="Node2D" unique_id=435127395]
+script = ExtResource("1_u7fty")
 
 [node name="Control" type="Control" parent="." unique_id=633418027]
 layout_mode = 3
@@ -10,8 +15,30 @@ offset_bottom = 40.0
 
 [node name="Main Menu" type="Button" parent="Control" unique_id=707517512]
 layout_mode = 0
-offset_left = 460.0
-offset_top = 391.0
-offset_right = 691.0
-offset_bottom = 540.0
+offset_left = 446.0
+offset_top = 275.0
+offset_right = 677.0
+offset_bottom = 424.0
 text = "Main Menu"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1298427685]
+z_index = -1
+offset_left = -73.0
+offset_top = -143.0
+offset_right = 1234.0
+offset_bottom = 837.0
+mouse_filter = 2
+texture = ExtResource("2_dmo3b")
+stretch_mode = 6
+metadata/_edit_lock_ = true
+
+[node name="Fade_Transition" parent="." unique_id=1402769930 instance=ExtResource("3_qnbyg")]
+visible = false
+offset_left = 458.0
+offset_top = 388.0
+offset_right = 1613.0
+offset_bottom = 1040.0
+
+[node name="Fade_timer" type="Timer" parent="Fade_Transition" unique_id=1321393446]
+
+[connection signal="pressed" from="Control/Main Menu" to="." method="_on_main_menu_pressed"]
