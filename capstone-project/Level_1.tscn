@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cflplv6pviyuw" path="res://endpad.tscn" id="2_kidjj"]
 [ext_resource type="PackedScene" uid="uid://b8bgaamg66tbb" path="res://coin.tscn" id="3_65pcf"]
 [ext_resource type="PackedScene" uid="uid://cn04dxxyb0mnj" path="res://optionalcoin.tscn" id="4_a0j4s"]
+[ext_resource type="PackedScene" uid="uid://b4elh84wwwcsn" path="res://hud.tscn" id="6_u16a4"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_jikk4"]
 frequency = 0.0015
@@ -444,23 +445,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.557264, 11.962854, 13.4203
 [node name="coin20" parent="." unique_id=499808608 instance=ExtResource("3_65pcf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.732516, 10.0262165, -6.170899)
 
-[node name="Level1Timer" type="Timer" parent="." unique_id=566884637]
-wait_time = 60.0
-one_shot = true
-
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1912375438]
-
-[node name="Label" type="Label" parent="CanvasLayer" unique_id=1921689118]
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -20.0
-offset_right = 20.0
-offset_bottom = 23.0
-grow_horizontal = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 44
+[node name="Hud" parent="." unique_id=2018469095 instance=ExtResource("6_u16a4")]
+follow_viewport_enabled = true
 
 [connection signal="body_entered" from="WinArea" to="WinArea" method="_on_body_entered"]
-[connection signal="timeout" from="Level1Timer" to="." method="_on_level_1_timer_timeout"]

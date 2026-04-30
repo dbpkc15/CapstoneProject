@@ -6,7 +6,7 @@ extends Node3D
 var game_over = false
 
 func _ready() -> void:
-	timer.start(30)
+	timer.start(6)
 
 func _process(delta):
 	if not game_over:
