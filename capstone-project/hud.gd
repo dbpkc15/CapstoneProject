@@ -14,7 +14,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if not game_over:
-		label.text = "Time: " + str(int(timer.time_left))	
+		label.text = "Time: " + str(int(timer.time_left))
 	
 func _on_level_timer_timeout():
 	game_over = true

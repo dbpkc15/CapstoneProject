@@ -124,9 +124,6 @@ func _ready() -> void:
 func _on_body_entered(body):
 	if body.name == \"Player\":
 		body.respawn()
-
-func _process(delta: float) -> void:
-	pass
 "
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_0xm2m"]
@@ -347,5 +344,6 @@ transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -3.7504368, 12.648275, 
 shape = SubResource("CylinderShape3D_65pcf")
 
 [node name="Hud" parent="." unique_id=2018469095 instance=ExtResource("3_qulvd")]
+time = 35
 
 [connection signal="body_entered" from="WinArea" to="WinArea" method="_on_body_entered"]
