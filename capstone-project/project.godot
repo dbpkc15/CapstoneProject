@@ -21,6 +21,7 @@ config/features=PackedStringArray("4.6", "GL Compatibility")
 [autoload]
 
 LevelManager="*uid://pfxqj54k6laf"
+GameManager="*uid://byq61unhfnqjj"
 
 [input]
 

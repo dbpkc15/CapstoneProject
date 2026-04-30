@@ -143,8 +143,17 @@ script/source = "extends Area3D
 
 func _on_body_entered(body):
 	if body.name == \"Player\":
+		print(\"Collected:\", GameManager.coins_collected)
+		print(\"Total:\", GameManager.total_coins)
+
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-		get_tree().change_scene_to_file.call_deferred(\"res://WinScreen.tscn\")
+
+		if GameManager.coins_collected == GameManager.total_coins:
+			print(\"WIN\")
+			get_tree().change_scene_to_file.call_deferred(\"res://WinScreen.tscn\")
+		else:
+			print(\"LOSE\")
+			get_tree().change_scene_to_file.call_deferred(\"res://LoseScreen.tscn\")
 "
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_65pcf"]
