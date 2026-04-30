@@ -36,4 +36,4 @@ func _on_fade_timer_timeout() -> void:
 		get_tree().change_scene_to_file("res://main_menu.tscn")
 		
 	elif button_type == "NextLevel" :
-		await $Fade_Transition/AnimationPlayer.animation_finished
+		await $Fade_Transition/AnimationPlayer.animation_finisheded
