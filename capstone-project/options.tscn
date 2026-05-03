@@ -2,8 +2,23 @@
 
 [ext_resource type="Script" uid="uid://ie20r7vddd1m" path="res://options.gd" id="1_se8ut"]
 [ext_resource type="PackedScene" uid="uid://cejxcyyxeo73y" path="res://Fade_Transition.tscn" id="2_ao2gm"]
+[ext_resource type="Texture2D" uid="uid://cc8cipykre8aa" path="res://background.jpeg" id="3_ao2gm"]
 
 [node name="Tutorial" type="Node2D" unique_id=1700740660]
 script = ExtResource("1_se8ut")
 
 [node name="Fade_Transition" parent="." unique_id=1402769930 instance=ExtResource("2_ao2gm")]
+visible = false
+
+[node name="Background" type="Sprite2D" parent="." unique_id=712458969]
+position = Vector2(575, 338)
+texture = ExtResource("3_ao2gm")
+
+[node name="Main" type="Button" parent="." unique_id=39030297]
+offset_left = 46.0
+offset_top = 544.0
+offset_right = 157.0
+offset_bottom = 604.0
+text = "Back"
+
+[connection signal="pressed" from="Main" to="." method="_on_main_pressed"]

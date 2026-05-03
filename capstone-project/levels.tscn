@@ -73,3 +73,4 @@ metadata/_edit_lock_ = true
 [connection signal="pressed" from="Control/Level_1" to="." method="_on_level_1_pressed"]
 [connection signal="pressed" from="Control/Level_2" to="." method="_on_level_2_pressed"]
 [connection signal="pressed" from="Control/Level_3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="Control/Main" to="." method="_on_main_pressed"]

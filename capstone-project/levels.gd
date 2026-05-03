@@ -20,3 +20,7 @@ func _on_level_2_pressed() -> void:
 func _on_level_3_pressed() -> void:
 	get_tree().change_scene_to_file("res://Level_3.tscn")
 	LevelManager.currentLevelIndex = 3
+
+
+func _on_main_pressed() -> void:
+	get_tree().change_scene_to_file("res://main_menu.tscn")
