@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b6lsdbue5oq3p"]
+
+[ext_resource type="Script" uid="uid://2g5guqlkenem" path="res://audio_controller.gd" id="1_31uvl"]
+[ext_resource type="AudioStream" uid="uid://h1s7xqrbn413" path="res://JDSherbert - Pixel Game Essentials SFX Pack (FREE)/JDSherbert - Nostalgia Music Pack [FREE]/Stereo/wav/JDSherbert - Nostalgia Music Pack - Gameboy & A Long Car Journey.wav" id="2_onihc"]
+[ext_resource type="AudioStream" uid="uid://n3ftx0m3f56e" path="res://JDSherbert - Pixel Game Essentials SFX Pack (FREE)/Stereo/wav (HD)/JDSherbert - Pixel Game Essentials SFX Pack - Jump 1.wav" id="3_5vlka"]
+
+[node name="AudioController" type="Node2D" unique_id=1052804468]
+script = ExtResource("1_31uvl")
+
+[node name="Music" type="AudioStreamPlayer" parent="." unique_id=1209139710]
+stream = ExtResource("2_onihc")
+
+[node name="Jump" type="AudioStreamPlayer" parent="." unique_id=1626143810]
+stream = ExtResource("3_5vlka")
+pitch_scale = 1.75

@@ -44,6 +44,8 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("ui_accept") and jump_count < MAX_JUMPS:
 		velocity.y = JUMP_VELOCITY
 		jump_count += 1
+		AudioController.play_jump()
+
 
 	var input_dir := Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	input_dir = Input.get_vector("LeftMovement", "RightMovement", "UpMovement", "DownMovement")
@@ -59,6 +61,7 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
+
 
 
 func respawn():

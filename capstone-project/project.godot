@@ -22,6 +22,7 @@ config/features=PackedStringArray("4.6", "GL Compatibility")
 
 LevelManager="*uid://pfxqj54k6laf"
 GameManager="*uid://byq61unhfnqjj"
+AudioController="*uid://b6lsdbue5oq3p"
 
 [display]
 
