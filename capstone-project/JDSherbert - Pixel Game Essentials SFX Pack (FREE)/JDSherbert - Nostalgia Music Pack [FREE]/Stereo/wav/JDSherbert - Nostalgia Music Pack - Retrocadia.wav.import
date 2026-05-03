@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bkkxu73f8jy7d"
+path="res://.godot/imported/JDSherbert - Nostalgia Music Pack - Retrocadia.wav-66fd362028fe54b815e4119de35f25ac.sample"
+
+[deps]
+
+source_file="res://JDSherbert - Pixel Game Essentials SFX Pack (FREE)/JDSherbert - Nostalgia Music Pack [FREE]/Stereo/wav/JDSherbert - Nostalgia Music Pack - Retrocadia.wav"
+dest_files=["res://.godot/imported/JDSherbert - Nostalgia Music Pack - Retrocadia.wav-66fd362028fe54b815e4119de35f25ac.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -6,3 +6,5 @@ func _ready() -> void:
 	GameManager.total_coins = get_tree().get_nodes_in_group("Coins").size()
 	
 	print("Total coins:", GameManager.total_coins)
+
+	AudioController.play_music()

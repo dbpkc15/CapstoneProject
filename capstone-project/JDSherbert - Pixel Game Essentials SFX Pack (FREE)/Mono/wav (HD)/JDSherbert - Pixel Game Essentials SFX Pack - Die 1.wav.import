@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bjqp1e0ein3x6"
+path="res://.godot/imported/JDSherbert - Pixel Game Essentials SFX Pack - Die 1.wav-310d34d53e4de28fb2be75a36a88d5e6.sample"
+
+[deps]
+
+source_file="res://JDSherbert - Pixel Game Essentials SFX Pack (FREE)/Mono/wav (HD)/JDSherbert - Pixel Game Essentials SFX Pack - Die 1.wav"
+dest_files=["res://.godot/imported/JDSherbert - Pixel Game Essentials SFX Pack - Die 1.wav-310d34d53e4de28fb2be75a36a88d5e6.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

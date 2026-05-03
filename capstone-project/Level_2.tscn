@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://cmm6qhc68svnt"]
 
+[ext_resource type="Script" uid="uid://ivsfv7x220fe" path="res://level_2.gd" id="1_1n7cm"]
 [ext_resource type="Script" uid="uid://tu423d8dg54j" path="res://character_body_3d.gd" id="1_ngfil"]
 [ext_resource type="Texture2D" uid="uid://cc8cipykre8aa" path="res://background.jpeg" id="2_3djxs"]
 [ext_resource type="PackedScene" uid="uid://cflplv6pviyuw" path="res://endpad.tscn" id="2_q4d37"]
@@ -65,6 +66,7 @@ func _on_body_entered(body):
 height = 0.3125
 
 [node name="Node3D" type="Node3D" unique_id=1232121490]
+script = ExtResource("1_1n7cm")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1479089235]
 environment = SubResource("Environment_1bvp3")

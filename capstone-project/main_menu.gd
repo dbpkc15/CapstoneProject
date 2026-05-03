@@ -29,3 +29,5 @@ func _on_fade_timer_timeout() -> void:
 	elif button_type == "options" :
 		await $Fade_Transition/AnimationPlayer.animation_finished
 		get_tree().change_scene_to_file("res://options.tscn")
+
+	AudioController.play_music()
