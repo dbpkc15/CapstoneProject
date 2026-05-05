@@ -37,3 +37,9 @@ func _on_fade_timer_timeout() -> void:
 		
 	elif button_type == "NextLevel" :
 		await $Fade_Transition/AnimationPlayer.animation_finisheded
+		
+@onready var score_label = $ScoreLabel
+
+func _ready():
+	score_label.text = "+" + str(GameManager.optional_coins_collected)
+	GameManager.optional_coins_collected = 0

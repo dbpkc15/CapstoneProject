@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://t855ae6i8yet"]
 
 [ext_resource type="Texture2D" uid="uid://cc8cipykre8aa" path="res://background.jpeg" id="1_cgnti"]
+[ext_resource type="Script" uid="uid://dw5ub0py2px8u" path="res://lose_screen.gd" id="1_rrrys"]
 
 [node name="Node2D" type="Node2D" unique_id=1328264485]
+script = ExtResource("1_rrrys")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=113725609]
 offset_left = -2.0
@@ -10,3 +12,59 @@ offset_top = -222.0
 offset_right = 1305.0
 offset_bottom = 758.0
 texture = ExtResource("1_cgnti")
+
+[node name="Label" type="Label" parent="." unique_id=41581657]
+offset_top = 117.0
+offset_right = 1153.0
+offset_bottom = 302.0
+theme_override_font_sizes/font_size = 75
+text = "Game Over!"
+horizontal_alignment = 1
+
+[node name="Button_Manager" type="Control" parent="." unique_id=686444364]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 36.0
+
+[node name="MainMenu" type="Button" parent="Button_Manager" unique_id=1696461579]
+layout_mode = 0
+offset_left = 468.0
+offset_top = 492.0
+offset_right = 684.0
+offset_bottom = 581.0
+text = "Main Menu"
+
+[node name="RestartLevel" type="Button" parent="Button_Manager" unique_id=2058375044]
+layout_mode = 0
+offset_left = 467.0
+offset_top = 376.0
+offset_right = 683.0
+offset_bottom = 465.0
+text = "Restart Level
+"
+
+[node name="Button_Manager" type="Control" parent="Button_Manager/RestartLevel" unique_id=813318992]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 36.0
+
+[node name="MainMenu" type="Button" parent="Button_Manager/RestartLevel/Button_Manager" unique_id=50984126]
+layout_mode = 0
+offset_left = 476.0
+offset_top = 492.0
+offset_right = 692.0
+offset_bottom = 581.0
+text = "Main Menu"
+
+[node name="NextLevel" type="Button" parent="Button_Manager/RestartLevel/Button_Manager" unique_id=241980784]
+layout_mode = 0
+offset_left = 475.0
+offset_top = 376.0
+offset_right = 691.0
+offset_bottom = 465.0
+text = "Next Level
+"
+
+[connection signal="pressed" from="Button_Manager/MainMenu" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="Button_Manager/RestartLevel" to="." method="_on_restart_level_pressed"]

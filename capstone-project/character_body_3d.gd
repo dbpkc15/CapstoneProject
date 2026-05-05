@@ -67,3 +67,9 @@ func _physics_process(delta: float) -> void:
 func respawn():
 	velocity = Vector3.ZERO
 	global_position = spawn_position
+	
+var score = 0
+
+func add_score(amount: int):
+	score += amount
+	print("Score: ", score)
