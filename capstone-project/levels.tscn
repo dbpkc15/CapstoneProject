@@ -19,24 +19,24 @@ offset_bottom = 37.0
 layout_mode = 0
 offset_left = 59.0
 offset_top = 93.0
-offset_right = 345.0
-offset_bottom = 285.0
+offset_right = 358.0
+offset_bottom = 249.0
 text = "Level 1"
 
 [node name="Level_2" type="Button" parent="Control" unique_id=1759262212]
 layout_mode = 0
-offset_left = 407.0
-offset_top = 306.0
-offset_right = 706.0
-offset_bottom = 464.0
+offset_left = 429.0
+offset_top = 277.0
+offset_right = 728.0
+offset_bottom = 431.0
 text = "Level 2"
 
 [node name="Level_3" type="Button" parent="Control" unique_id=2089882609]
 layout_mode = 0
-offset_left = 740.0
-offset_top = 470.0
-offset_right = 1053.0
-offset_bottom = 615.0
+offset_left = 797.0
+offset_top = 453.0
+offset_right = 1097.0
+offset_bottom = 602.0
 text = "Level 3"
 
 [node name="Main" type="Button" parent="Control" unique_id=360813453]
