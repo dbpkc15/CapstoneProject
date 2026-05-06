@@ -139,6 +139,30 @@ radius = 2.0
 height = 1.3437656
 material = SubResource("StandardMaterial3D_4c57u")
 
+[node name="CSGCylinder3D8" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D" unique_id=1365245512]
+transform = Transform3D(0.9983257, 0.00057416747, 0.057840455, -0.00060735556, 0.9999995, 0.00055615586, -0.05784011, -0.00059035723, 0.9983256, -4.175931, 15.476527, 32.440247)
+radius = 2.0
+height = 1.6718829
+material = SubResource("StandardMaterial3D_4c57u")
+
+[node name="CSGCylinder3D9" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D" unique_id=1756922444]
+transform = Transform3D(0.9983257, 0.00057416747, 0.057840455, -0.00060735556, 0.9999995, 0.00055615586, -0.05784011, -0.00059035723, 0.9983256, 1.8243563, 16.976524, 30.439953)
+radius = 2.0
+height = 0.6718828
+material = SubResource("StandardMaterial3D_4c57u")
+
+[node name="CSGCylinder3D7" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D" unique_id=456336516]
+transform = Transform3D(0.99832577, 0.0005741676, 0.057840455, -0.00060735556, 0.99999964, 0.0005561559, -0.057840105, -0.0005903573, 0.99832565, 13.824163, 14.640586, 16.44015)
+radius = 2.0
+height = 1.3437656
+material = SubResource("StandardMaterial3D_4c57u")
+
+[node name="CSGCylinder3D6" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D" unique_id=337513234]
+transform = Transform3D(0.99832577, 0.0005741676, 0.057840455, -0.00060735556, 0.99999964, 0.0005561559, -0.057840105, -0.0005903573, 0.99832565, 8.824356, 3.9765267, -12.560048)
+radius = 3.0
+height = 0.6718828
+material = SubResource("StandardMaterial3D_4c57u")
+
 [node name="CSGBox3D4" type="CSGBox3D" parent="DirectionalLight3D/CSGBox3D" unique_id=1537096470]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.65919, 2.315456, 1.1315248)
 size = Vector3(4, 3, 8)
@@ -147,6 +171,11 @@ material = SubResource("StandardMaterial3D_1u8w0")
 [node name="CSGBox3D6" type="CSGBox3D" parent="DirectionalLight3D/CSGBox3D" unique_id=1234153449]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.65919, 10.40292, 11.631524)
 size = Vector3(10, 1.1749268, 5)
+material = SubResource("StandardMaterial3D_1u8w0")
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="DirectionalLight3D/CSGBox3D" unique_id=1366480769]
+transform = Transform3D(0.9659258, -0.25881904, 0, 0.25881904, 0.9659258, 0, 0, 0, 1, 25.15359, 7.357993, -12.368476)
+size = Vector3(3, 1, 3)
 material = SubResource("StandardMaterial3D_1u8w0")
 
 [node name="CSGBox3D5" type="CSGBox3D" parent="DirectionalLight3D/CSGBox3D" unique_id=1584601462]
