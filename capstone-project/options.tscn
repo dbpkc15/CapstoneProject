@@ -21,4 +21,24 @@ offset_right = 157.0
 offset_bottom = 604.0
 text = "Back"
 
+[node name="Label" type="Label" parent="." unique_id=2060721198]
+offset_left = 10.0
+offset_top = -42.0
+offset_right = 1149.0
+offset_bottom = 690.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "1. You have the option to choose from three levels of varying difficulty. 
+2. Use the left, right, up, and down arrows to move the player
+3. You must stay on the platform and collect all the required (gold) coins
+4. The purple coins are optional, but you gain a point each time you collect one
+5. If you collect all the required coins and reach the endpad before the time runs out, you win. 
+However, if you reach the endpad without having collected all the required coins, you lose.
+6. If the time runs out before you reached the endpad, or if you fall off the platform, the level will automatically restart.
+If it restarts because you fell from the platform, the timer will continue from where it left off. 
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
 [connection signal="pressed" from="Main" to="." method="_on_main_pressed"]
