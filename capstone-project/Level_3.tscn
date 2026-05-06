@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cflplv6pviyuw" path="res://endpad.tscn" id="2_qulvd"]
 [ext_resource type="PackedScene" uid="uid://b4elh84wwwcsn" path="res://hud.tscn" id="3_qulvd"]
 [ext_resource type="PackedScene" uid="uid://b8bgaamg66tbb" path="res://coin.tscn" id="5_oooit"]
+[ext_resource type="PackedScene" uid="uid://cn04dxxyb0mnj" path="res://optionalcoin.tscn" id="6_5bimo"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_qulvd"]
 frequency = 0.1031
@@ -89,7 +90,7 @@ environment = SubResource("Environment_1bvp3")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.4823208, 0)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="DirectionalLight3D" unique_id=1892450927]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07705498, -0.16740096, -0.11262202)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.062960625, -0.19103193, -0.09970856)
 use_collision = true
 size = Vector3(20, 1, 20)
 material = SubResource("StandardMaterial3D_ig7tw")
@@ -120,6 +121,12 @@ material = SubResource("StandardMaterial3D_kek77")
 transform = Transform3D(0.9992941, -0.018261032, 0.032833338, 0.017034158, 0.99916023, 0.03726593, -0.033486273, -0.036680337, 0.9987658, 25.609774, 9.35985, 3.8578517)
 radius = 3.159668
 height = 0.47937942
+material = SubResource("StandardMaterial3D_4c57u")
+
+[node name="CSGCylinder3D10" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D" unique_id=1866376201]
+transform = Transform3D(0.9992941, -0.018261032, 0.032833338, 0.017034158, 0.99916023, 0.03726593, -0.033486273, -0.036680337, 0.9987658, 28.760895, 10.234535, 10.821866)
+radius = 3.159668
+height = 0.5029414
 material = SubResource("StandardMaterial3D_4c57u")
 
 [node name="CSGCylinder3D3" type="CSGCylinder3D" parent="DirectionalLight3D/CSGBox3D" unique_id=372222206]
@@ -209,7 +216,7 @@ transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 2.4972286, -44.160027, -15.29
 script = SubResource("GDScript_ig7tw")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=443750199]
-transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 0, 0.018976688, 0)
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 0, 0, 0)
 shape = SubResource("SphereShape3D_0xm2m")
 
 [node name="endpad" parent="." unique_id=396366810 instance=ExtResource("2_qulvd")]
@@ -219,19 +226,118 @@ transform = Transform3D(0.9872292, -0.076927856, 0.13950165, 0.07617114, 0.99703
 script = SubResource("GDScript_kidjj")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WinArea" unique_id=364922081]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -3.7504368, 12.648275, 16.51152)
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -10.274594, 18.883165, 26.37849)
 shape = SubResource("CylinderShape3D_65pcf")
 
 [node name="Hud" parent="." unique_id=2018469095 instance=ExtResource("3_qulvd")]
 time = 35
 
 [node name="coin" parent="." unique_id=2097315517 instance=ExtResource("5_oooit")]
-transform = Transform3D(0.99999726, -0.0023209513, 0.0003820521, 0.0023205602, 0.9999968, 0.001024985, -0.00038442045, -0.0010240991, 0.9999994, 12.481599, 2.4441855, -3.5761242)
+transform = Transform3D(0.99999726, -0.0023209513, 0.0003820521, 0.0023205602, 0.9999968, 0.001024985, -0.00038442045, -0.0010240991, 0.9999994, 12.337401, 2.2083876, -2.9762945)
 
 [node name="coin2" parent="." unique_id=481130089 instance=ExtResource("5_oooit")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.2224245, 2.0213335, -5.0330334)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.21366, 2.0783525, -6.0563526)
 
 [node name="coin3" parent="." unique_id=592469989 instance=ExtResource("5_oooit")]
 transform = Transform3D(0.99999285, -0.0037873555, 0, 0.003787235, 0.999961, 0.00797607, -3.0208212e-05, -0.007976013, 0.9999682, 13.966251, 2.1857347, -4.9932227)
+
+[node name="optionalcoin" parent="." unique_id=1397667212 instance=ExtResource("6_5bimo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.597943, 4.2334633, -11.293812)
+
+[node name="optionalcoin2" parent="." unique_id=288866537 instance=ExtResource("6_5bimo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.155062, 4.2544365, -13.422711)
+
+[node name="optionalcoin3" parent="." unique_id=858939312 instance=ExtResource("6_5bimo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.445381, 3.8841953, 3.7076573)
+
+[node name="optionalcoin4" parent="." unique_id=438761174 instance=ExtResource("6_5bimo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.908133, 3.7421045, 2.6998982)
+
+[node name="coin4" parent="." unique_id=1605111668 instance=ExtResource("5_oooit")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.291054, 4.0850916, -0.22083509)
+
+[node name="coin5" parent="." unique_id=300231725 instance=ExtResource("5_oooit")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.761, 3.9408693, -1.457372)
+
+[node name="coin6" parent="." unique_id=1325175960 instance=ExtResource("5_oooit")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.93326, 3.742105, 0.461442)
+
+[node name="coin7" parent="." unique_id=165019827 instance=ExtResource("5_oooit")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.288694, 6.19082, -6.804654)
+
+[node name="optionalcoin5" parent="." unique_id=994840878 instance=ExtResource("6_5bimo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.267628, 7.5882115, -12.399384)
+
+[node name="optionalcoin6" parent="." unique_id=792608672 instance=ExtResource("6_5bimo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.827166, 8.006091, -12.762396)
+
+[node name="coin8" parent="." unique_id=1008058162 instance=ExtResource("5_oooit")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.940248, 7.7133107, -6.9184213)
+
+[node name="coin9" parent="." unique_id=138737871 instance=ExtResource("5_oooit")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.43572, 7.200521, -6.34033)
+
+[node name="coin10" parent="." unique_id=779380165 instance=ExtResource("5_oooit")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.109095, 7.486588, -1.8951502)
+
+[node name="coin12" parent="." unique_id=177489241 instance=ExtResource("5_oooit")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.028624, 9.533392, 3.1966076)
+
+[node name="coin11" parent="." unique_id=924177867 instance=ExtResource("5_oooit")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.894869, 9.626886, 5.2124767)
+
+[node name="coin13" parent="." unique_id=1795835031 instance=ExtResource("5_oooit")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.18482, 9.543107, 2.7860029)
+
+[node name="coin14" parent="." unique_id=699147163 instance=ExtResource("5_oooit")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.120497, 11.394574, 11.780427)
+
+[node name="coin15" parent="." unique_id=1038830775 instance=ExtResource("5_oooit")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.998236, 10.917033, 10.563149)
+
+[node name="coin16" parent="." unique_id=2130406275 instance=ExtResource("5_oooit")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.371696, 10.917034, 12.901075)
+
+[node name="coin17" parent="." unique_id=463819038 instance=ExtResource("5_oooit")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.333527, 10.917034, 10.358434)
+
+[node name="optionalcoin7" parent="." unique_id=992129805 instance=ExtResource("6_5bimo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.300394, 10.467023, 11.7831955)
+
+[node name="optionalcoin8" parent="." unique_id=1894790652 instance=ExtResource("6_5bimo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.397856, 10.64621, 10.314181)
+
+[node name="optionalcoin9" parent="." unique_id=2136808504 instance=ExtResource("6_5bimo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.820885, 10.493828, 11.258597)
+
+[node name="coin18" parent="." unique_id=672501789 instance=ExtResource("5_oooit")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.600864, 15.773481, 16.824362)
+
+[node name="coin19" parent="." unique_id=903095269 instance=ExtResource("5_oooit")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.047273, 13.675725, 10.333227)
+
+[node name="optionalcoin10" parent="." unique_id=1767293546 instance=ExtResource("6_5bimo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.55674, 14.595429, 14.710516)
+
+[node name="optionalcoin11" parent="." unique_id=2040158413 instance=ExtResource("6_5bimo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.095563, 14.134172, 16.161434)
+
+[node name="coin20" parent="." unique_id=1296381009 instance=ExtResource("5_oooit")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.754267, 15.413068, 21.501352)
+
+[node name="coin21" parent="." unique_id=356305336 instance=ExtResource("5_oooit")]
+transform = Transform3D(1, 0, 0, 0, 0.9953878, -0.095932625, 0, 0.095932625, 0.9953878, 0.39152944, 16.272947, 26.288164)
+
+[node name="coin22" parent="." unique_id=1787683042 instance=ExtResource("5_oooit")]
+transform = Transform3D(0.999976, 0.004408224, -0.005374109, -0.0044146674, 0.99998975, -0.0011874735, 0.0053688176, 0.0012111753, 0.9999849, -1.5872527, 16.245403, 26.470575)
+
+[node name="coin23" parent="." unique_id=1019614794 instance=ExtResource("5_oooit")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8368239, 17.841139, 30.772793)
+
+[node name="optionalcoin12" parent="." unique_id=493202775 instance=ExtResource("6_5bimo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.084895, 16.430975, 33.036243)
+
+[node name="coin24" parent="." unique_id=1342168835 instance=ExtResource("5_oooit")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.4297943, 17.998497, 27.737146)
 
 [connection signal="body_entered" from="WinArea" to="WinArea" method="_on_body_entered"]
