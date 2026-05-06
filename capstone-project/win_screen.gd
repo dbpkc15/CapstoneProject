@@ -24,6 +24,8 @@ func _on_next_level_pressed() -> void:
 	elif LevelManager.currentLevelIndex == 2:
 		get_tree().change_scene_to_file("res://Level_3.tscn")
 		LevelManager.currentLevelIndex =3
+	else:
+		get_tree().change_scene_to_file("res://Game_Complete.tscn")
 	button_type = "NextLevel"
 	$Fade_Transition.show()
 	$Fade_Transition/Fade_timer.start()
@@ -36,7 +38,7 @@ func _on_fade_timer_timeout() -> void:
 		get_tree().change_scene_to_file("res://main_menu.tscn")
 		
 	elif button_type == "NextLevel" :
-		await $Fade_Transition/AnimationPlayer.animation_finisheded
+		await $Fade_Transition/AnimationPlayer.animation_finished
 		
 @onready var score_label = $ScoreLabel
 

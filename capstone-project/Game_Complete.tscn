@@ -41,4 +41,13 @@ offset_bottom = 650.0
 
 [node name="Fade_timer" type="Timer" parent="Fade_Transition" unique_id=1321393446]
 
+[node name="Label" type="Label" parent="." unique_id=930201389]
+offset_left = 64.0
+offset_top = 174.0
+offset_right = 1110.0
+offset_bottom = 466.0
+theme_override_font_sizes/font_size = 65
+text = "Game Completed!"
+horizontal_alignment = 1
+
 [connection signal="pressed" from="Control/Main Menu" to="." method="_on_main_menu_pressed"]
