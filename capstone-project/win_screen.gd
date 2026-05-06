@@ -27,7 +27,6 @@ func _on_next_level_pressed() -> void:
 		get_tree().change_scene_to_file("res://Game_Complete.tscn")
 	button_type = "NextLevel"
 	$Fade_Transition.show()
-	$Fade_Transition/Fade_timer.start()
 	$Fade_Transition/Fade_timer.timeout.connect(_on_fade_timer_timeout)
 	$Fade_Transition/AnimationPlayer.play("Fade_In")
 	

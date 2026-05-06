@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://c2lbts2ryu748"]
+
+[ext_resource type="Script" uid="uid://b2ibyqpjpg0qf" path="res://audio_controller_2.gd" id="1_i1ysr"]
+[ext_resource type="AudioStream" uid="uid://bkkxu73f8jy7d" path="res://JDSherbert - Pixel Game Essentials SFX Pack (FREE)/JDSherbert - Nostalgia Music Pack [FREE]/Stereo/wav/JDSherbert - Nostalgia Music Pack - Retrocadia.wav" id="2_35o1u"]
+
+[node name="AudioController2" type="Node2D" unique_id=1283042781]
+script = ExtResource("1_i1ysr")
+
+[node name="Level2" type="AudioStreamPlayer" parent="." unique_id=46170769]
+stream = ExtResource("2_35o1u")
+autoplay = true

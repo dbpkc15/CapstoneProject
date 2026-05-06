@@ -35,6 +35,7 @@ visible = false
 
 [node name="Fade_timer" type="Timer" parent="Fade_Transition" unique_id=1168935443]
 one_shot = true
+autostart = true
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1365846939]
 z_index = -1

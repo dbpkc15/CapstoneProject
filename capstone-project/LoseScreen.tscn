@@ -44,27 +44,5 @@ offset_bottom = 465.0
 text = "Restart Level
 "
 
-[node name="Button_Manager" type="Control" parent="Button_Manager/RestartLevel" unique_id=813318992]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 36.0
-
-[node name="MainMenu" type="Button" parent="Button_Manager/RestartLevel/Button_Manager" unique_id=50984126]
-layout_mode = 0
-offset_left = 476.0
-offset_top = 492.0
-offset_right = 692.0
-offset_bottom = 581.0
-text = "Main Menu"
-
-[node name="NextLevel" type="Button" parent="Button_Manager/RestartLevel/Button_Manager" unique_id=241980784]
-layout_mode = 0
-offset_left = 475.0
-offset_top = 376.0
-offset_right = 691.0
-offset_bottom = 465.0
-text = "Next Level
-"
-
 [connection signal="pressed" from="Button_Manager/MainMenu" to="." method="_on_main_menu_pressed"]
 [connection signal="pressed" from="Button_Manager/RestartLevel" to="." method="_on_restart_level_pressed"]
