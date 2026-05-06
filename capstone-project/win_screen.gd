@@ -6,7 +6,6 @@ var button_type = null
 func _process(delta: float) -> void:
 	pass
 
-
 func _on_main_menu_pressed() -> void:
 	button_type = "MainMenu"
 	$Fade_Transition.show()
@@ -33,8 +32,9 @@ func _on_next_level_pressed() -> void:
 	$Fade_Transition/AnimationPlayer.play("Fade_In")
 	
 func _on_fade_timer_timeout() -> void:
+	await $Fade_Transition/AnimationPlayer.animation_finished
+	
 	if button_type == "MainMenu" :
-		await $Fade_Transition/AnimationPlayer.animation_finished
 		get_tree().change_scene_to_file("res://main_menu.tscn")
 		
 	elif button_type == "NextLevel" :
@@ -45,3 +45,4 @@ func _on_fade_timer_timeout() -> void:
 func _ready():
 	score_label.text = "+" + str(GameManager.optional_coins_collected)
 	GameManager.optional_coins_collected = 0
+	$Fade_Transition/Fade_timer.timeout.connect(_on_fade_timer_timeout)
