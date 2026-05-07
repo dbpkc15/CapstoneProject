@@ -243,7 +243,7 @@ transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -10.274594, 19.649658, 
 shape = SubResource("CylinderShape3D_65pcf")
 
 [node name="Hud" parent="." unique_id=2018469095 instance=ExtResource("3_qulvd")]
-time = 45
+time = 50
 
 [node name="coin" parent="." unique_id=2097315517 instance=ExtResource("5_oooit")]
 transform = Transform3D(0.99999726, -0.0023209513, 0.0003820521, 0.0023205602, 0.9999968, 0.001024985, -0.00038442045, -0.0010240991, 0.9999994, 12.337401, 2.2083876, -2.9762945)
