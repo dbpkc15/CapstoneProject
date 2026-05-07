@@ -4,6 +4,14 @@
 [ext_resource type="PackedScene" uid="uid://cejxcyyxeo73y" path="res://Fade_Transition.tscn" id="2_0eiwq"]
 [ext_resource type="Texture2D" uid="uid://cc8cipykre8aa" path="res://background.jpeg" id="3_cx6km"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_cx6km"]
+font_size = 84
+outline_size = 11
+
+[sub_resource type="LabelSettings" id="LabelSettings_6l1fx"]
+font_size = 80
+outline_size = 8
+
 [node name="Node2D" type="Node2D" unique_id=1499263953]
 script = ExtResource("1_a03an")
 
@@ -55,6 +63,7 @@ offset_right = 1153.0
 offset_bottom = 177.0
 theme_override_font_sizes/font_size = 65
 text = "Level Completed!"
+label_settings = SubResource("LabelSettings_cx6km")
 horizontal_alignment = 1
 
 [node name="ScoreLabel" type="Label" parent="." unique_id=1404940877]
@@ -64,6 +73,7 @@ offset_right = 1153.0
 offset_bottom = 397.0
 theme_override_font_sizes/font_size = 60
 text = "+0"
+label_settings = SubResource("LabelSettings_6l1fx")
 horizontal_alignment = 1
 vertical_alignment = 1
 

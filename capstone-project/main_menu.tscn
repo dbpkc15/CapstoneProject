@@ -4,6 +4,11 @@
 [ext_resource type="PackedScene" uid="uid://cejxcyyxeo73y" path="res://Fade_Transition.tscn" id="2_7vrkn"]
 [ext_resource type="Texture2D" uid="uid://cc8cipykre8aa" path="res://background.jpeg" id="3_fu7sn"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_fu7sn"]
+font_size = 129
+outline_size = 29
+outline_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+
 [node name="MainMenu" type="Node2D" unique_id=1620482163]
 script = ExtResource("1_06t4h")
 
@@ -70,12 +75,15 @@ stretch_mode = 6
 metadata/_edit_lock_ = true
 
 [node name="Label" type="Label" parent="." unique_id=1886424711]
-offset_top = 99.0
-offset_right = 1150.0
-offset_bottom = 274.0
+offset_left = -1.0
+offset_top = 60.0
+offset_right = 1149.0
+offset_bottom = 236.0
 theme_override_font_sizes/font_size = 75
 text = "Move IT!"
+label_settings = SubResource("LabelSettings_fu7sn")
 horizontal_alignment = 1
+uppercase = true
 
 [connection signal="pressed" from="Button_Manager/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Button_Manager/Tutorial" to="." method="_on_options_pressed"]

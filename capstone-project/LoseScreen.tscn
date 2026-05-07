@@ -3,6 +3,10 @@
 [ext_resource type="Texture2D" uid="uid://cc8cipykre8aa" path="res://background.jpeg" id="1_cgnti"]
 [ext_resource type="Script" uid="uid://dw5ub0py2px8u" path="res://lose_screen.gd" id="1_rrrys"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_rrrys"]
+font_size = 85
+outline_size = 7
+
 [node name="Node2D" type="Node2D" unique_id=1328264485]
 script = ExtResource("1_rrrys")
 
@@ -19,6 +23,7 @@ offset_right = 1153.0
 offset_bottom = 302.0
 theme_override_font_sizes/font_size = 75
 text = "Game Over!"
+label_settings = SubResource("LabelSettings_rrrys")
 horizontal_alignment = 1
 
 [node name="Button_Manager" type="Control" parent="." unique_id=686444364]

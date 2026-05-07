@@ -4,6 +4,12 @@
 [ext_resource type="PackedScene" uid="uid://cejxcyyxeo73y" path="res://Fade_Transition.tscn" id="2_ao2gm"]
 [ext_resource type="Texture2D" uid="uid://cc8cipykre8aa" path="res://background.jpeg" id="3_ao2gm"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_ao2gm"]
+font_size = 33
+font_color = Color(1.010103, 1.010103, 1.010103, 1)
+outline_size = 7
+outline_color = Color(0.005072324, 0.014908398, 0.008194447, 1)
+
 [node name="Tutorial" type="Node2D" unique_id=1700740660]
 script = ExtResource("1_se8ut")
 
@@ -22,21 +28,22 @@ offset_bottom = 604.0
 text = "Back"
 
 [node name="Label" type="Label" parent="." unique_id=2060721198]
-offset_left = 10.0
-offset_top = -42.0
-offset_right = 1149.0
-offset_bottom = 690.0
+offset_left = 23.0
+offset_top = 12.0
+offset_right = 1129.0
+offset_bottom = 548.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
-text = "1. You have the option to choose from three levels of varying difficulty. 
-2. Use the left, right, up, and down arrows to move the player
-3. You must stay on the platform and collect all the required (gold) coins
-4. The purple coins are optional, but you gain a point each time you collect one
-5. If you collect all the required coins and reach the endpad before the time runs out, you win. 
-However, if you reach the endpad without having collected all the required coins, you lose.
-6. If the time runs out before you reached the endpad, or if you fall off the platform, the level will automatically restart.
-If it restarts because you fell from the platform, the timer will continue from where it left off. 
+text = "1. Choose from 3 levels
+2. Move with Arrow Keys or WASD. Press Space to jump (triple jump enabled)
+3. Stay on the platform and collect all required gold coins
+4. Purple coins are optional and give bonus points
+5. Collect all required coins and reach the end pad before time runs out
+6. Reaching the end pad without all required coins = loss
+7. Falling off the platform or running out of time restarts the level
+8. If you fall, the timer continues from where it left off
 "
+label_settings = SubResource("LabelSettings_ao2gm")
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2

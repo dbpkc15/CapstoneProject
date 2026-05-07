@@ -4,6 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://cc8cipykre8aa" path="res://background.jpeg" id="2_dmo3b"]
 [ext_resource type="PackedScene" uid="uid://cejxcyyxeo73y" path="res://Fade_Transition.tscn" id="3_qnbyg"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_u7fty"]
+font_size = 92
+outline_size = 11
+
 [node name="Node2D" type="Node2D" unique_id=435127395]
 script = ExtResource("1_u7fty")
 
@@ -45,9 +49,10 @@ offset_bottom = 650.0
 offset_left = 64.0
 offset_top = 174.0
 offset_right = 1110.0
-offset_bottom = 466.0
+offset_bottom = 338.0
 theme_override_font_sizes/font_size = 65
 text = "Game Completed!"
+label_settings = SubResource("LabelSettings_u7fty")
 horizontal_alignment = 1
 
 [connection signal="pressed" from="Control/Main Menu" to="." method="_on_main_menu_pressed"]
